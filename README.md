@@ -1,5 +1,3 @@
----
-
 # 🍿 usePopcorn
 
 usePopcorn is a movie search and rating app built using React. It allows users to search for movies, view detailed information, rate movies, and keep track of the films they’ve watched. The app leverages the OMDb API to fetch movie data and stores user data locally.
