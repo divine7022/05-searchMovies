@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🍿 usePopcorn
 
-## Available Scripts
+usePopcorn is a movie search and rating app built using React. It allows users to search for movies, view detailed information, rate movies, and keep track of the films they’ve watched. The app leverages the OMDb API to fetch movie data and stores user data locally.
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+You can check out the live demo [here](#).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Search for movies using the OMDb API.
+- View movie details including plot, actors, director, genre, and IMDb rating.
+- Add movies to your "watched" list and rate them.
+- View summaries of the movies you’ve watched, including the average IMDb rating, user rating, and total runtime.
+- Local storage support: your watched list and ratings are saved, even after refreshing the page.
+- Keyboard shortcuts for navigation:
+  - `Enter`: Focus on the search bar and clear the current search term.
+  - `Escape`: Close the movie details view.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Installation & Setup
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have the following installed on your system:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](https://nodejs.org/en/) (v14.x or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps to Install
 
-### `npm run eject`
+1. Clone this repository to your local machine:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/yourusername/usePopcorn.git
+cd usePopcorn
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.Install the dependencies:
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.Create an `.env` file at the root of the project and add your OMDb API key:
+You can get an API key by signing up at `OMDb API`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4.Start the development server:
+npm start
+The app should now be running on `http://localhost:3000`.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🌟 Key Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Movie Search
+   The app allows you to search for movies by title using the OMDb API. As you type in the search bar, it displays a list of movies matching the query.
 
-### Code Splitting
+2. Movie Details
+   Click on a movie to view its details, such as:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Plot
+- Genre
+- Director
+- Actors
+  -IMDb rating
 
-### Analyzing the Bundle Size
+3. Rating Movies
+   After viewing a movie’s details, you can give it your own rating by selecting stars. Your rating will be saved locally.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Watched Movies List
+   You can add movies to your "watched" list. The app will display a summary of the movies you’ve watched, including:
 
-### Making a Progressive Web App
+- Average IMDb rating
+- Average user rating
+- Total runtime of all watched movies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. Local Storage
+   The app uses local storage to save your watched list and ratings, ensuring that your data persists even after refreshing the page.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🔑 Keyboard Shortcuts
 
-### Deployment
+- Enter: Focus on the search bar and clear the current query.
+- Escape: Close the movie details modal and return to the main screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+📦 Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React: The core JavaScript library for building the UI.
+- OMDb API: For fetching movie data.
+- Custom Hooks: Several custom hooks (like `useMovies` and `useKey`) are used to handle API calls and keyboard events efficiently.
+- Local Storage: Data is stored in the browser’s local storage using the custom hook `useLocalStorageState`.
+
+---
+
+💻 Technologies Used
+
+- React: The frontend library used to create interactive user interfaces.
+- CSS: For styling the components.
+- OMDb API: To fetch movie data.
+- Local Storage: To persist user ratings and watched movies across sessions.
+
+---
+
+🤝 Acknowledgements
+
+- `OMDb API` for providing movie data.
+
+---
