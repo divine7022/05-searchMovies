@@ -14,8 +14,8 @@ You can check out the live demo [here](#).
 - View summaries of the movies you’ve watched, including the average IMDb rating, user rating, and total runtime.
 - Local storage support: your watched list and ratings are saved, even after refreshing the page.
 - Keyboard shortcuts for navigation:
-  - `Enter`: Focus on the search bar and clear the current search term.
-  - `Escape`: Close the movie details view.
+  -  `Enter`: Focus on the search bar and clear the current search term.
+  -  `Escape`: Close the movie details view.
 
 ---
 
