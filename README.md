@@ -4,7 +4,7 @@ usePopcorn is a movie search and rating app built using React. It allows users t
 
 ## 🚀 Live Demo
 
-You can check out the live demo [here](#).
+You can check out the live demo [here](https://searchmovies12.netlify.app/) 👈
 
 ## Features
 
@@ -105,6 +105,6 @@ The app should now be running on `http://localhost:3000`.
 
 🤝 Acknowledgements
 
-- `OMDb API` for providing movie data.
+- [OMDb API](https://www.omdbapi.com/) for providing movie data.
 
 ---
