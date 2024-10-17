@@ -16,9 +16,7 @@ You can check out the live demo [here](https://searchmovies12.netlify.app/) 👈
 - Keyboard shortcuts for navigation:
   -  `Enter`: Focus on the search bar and clear the current search term.
   -  `Escape`: Close the movie details view.
-
 ---
-
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
